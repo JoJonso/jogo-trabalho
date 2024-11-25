@@ -1,0 +1,129 @@
+/** Fontes **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+
+@font-face {
+    font-family: 'pixel-operator';
+    src: url('./fonts/PixelOperator.ttf');
+}
+html:root {
+    cursor: none;
+
+}
+/** Display **/
+main {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gameDisplay {
+    position: absolute;
+    width: 80vw;
+    height: 75vh;
+    overflow: hidden;
+}
+/** SPRITES TELA 01 **/
+.logo {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-20%);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.texto {
+    font-family: 'pixel-operator';
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+    color: rgb(228, 228, 228);
+}
+.texto-pequeno {
+    font-family: 'pixel-operator';
+    color: white;
+    font-size: 1rem;
+
+}
+.texto-grande {
+    position: absolute;
+    font-family: 'pixel-operator';
+    font-size: 4rem;
+
+    color: white;
+
+
+}
+/** Animações do player **/
+.player {
+    position: absolute;
+    width: 64px;
+    height: 76px;
+
+    background-image: url("./images/player.gif");
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+/** Tiros **/
+.shoot01 {
+    position: absolute;
+    width: 32px;
+    height: 20px;
+
+    background-image: url('./images/shoot.png');
+}
+/** Inimigos **/
+.enemy {
+    position: absolute;
+    background-image: url("./images/enemy.gif");
+    width: 48px;
+    height: 80px;
+
+}
+/** UI DO JOGO **/
+.board {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+
+    background-color: black;
+}
+.textUI {
+    position: absolute;
+    margin-right: 1rem;
+    font-family: 'pixel-operator';
+    color: white;
+
+}
+/** Estrelas **/
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+}
+/** GAME OVER **/
+.gameover {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    text-align: center;
+    width: 300rem;
+    height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.div-score {
+    margin-top: 96px;
+
+}
