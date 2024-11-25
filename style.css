@@ -6,6 +6,7 @@
     src: url('./fonts/PixelOperator.ttf');
 }
 html:root {
+    overflow-y: hidden;
     cursor: none;
 
 }
